@@ -13,57 +13,89 @@
 <body>
     <div class="body-container">
         <div class="hero-left">
-            
+            <div class="title">
+                <img class="logo" src="./imgs/logo.png" alt="">
+                <h1>Ashenvale Patrol</h1>
+            </div>
         </div>
         <div class="content">
 
             <!-- Left side -->
             <div class="header">
+                <p>Warriors of the Alliance, heed our call.</p>
+                <p>The savage horde is trying to take our lands in Ashenvale. Join the crusade, and slay the vile fiends.</p>
+                <p>For the Alliance!</p>
                 
             </div>
 
             <!-- Right side -->
             <div class="form-container">
-                <h1>Let's do this!</h1>
                 
                 <!-- Form -->
-                <form action="">
-                    
-                    <div class="form-row">
-                        <div class="entry">
-                            <label for="first-name">First name</label>
-                            <input type="text" id="first-name" name="first-name">
+                <form>
+                    <div class="entry-container">
+                        <h1>Join the Ashenvale killteam</h1>
+
+                        <div class="form-row">
+                            <div class="entry">
+                                <label for="name">NAME</label>
+                                <input type="text" id="name" name="name" required placeholder="">
+                            </div>
+                        
+                            <div class="entry">
+                                <label for="race">RACE</label>
+                                <input type="text" list="races" id="race" name="race" required placeholder="">
+                                <datalist id="races">
+                                    <option value="Human"></option>
+                                    <option value="Night Elf"></option>
+                                    <option value="Dwarf"></option>
+                                    <option value="Gnome"></option>
+
+                                </datalist>
+                            </div>
                         </div>
                         
-                        <div class="entry">
-                            <label for="last-name">Last name</label>
-                            <input type="text" id="last-name" name="last-name">
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="entry">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email">
+                        <div class="form-row">
+                            <div class="entry">
+                                <label for="email">MAILING POST</label>
+                                <input type="email" id="email" name="email" required placeholder="">
+                            </div>
+                        
+                            <div class="entry">
+                                <label for="phone">CLASS</label>
+                                <input type="text" list="classes" id="class" name="class" required placeholder="">
+                                <datalist id="classes">
+                                    <option value="Mage"></option>
+                                    <option value="Warrior"></option>
+                                    <option value="Priest"></option>
+                                    <option value="Paladin"></option>
+                                    <option value="Rogue"></option>
+                                    <option value="Hunter"></option>
+                                    <option value="Warlock"></option>
+                                </datalist>
+                            </div>
                         </div>
                         
-                        <div class="entry">
-                            <label for="phone">Phone number</label>
-                            <input type="text" id="phone" name="phone">
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="entry">
-                            <label for="password">Password</label>
-                            <input type="password" id="password" name="password">
-                        </div>
+                        <div class="form-row">
+                            <div class="entry">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" id="password" name="password" required placeholder="">
+                            </div>
                         
-                        <div class="entry">
-                            <label for="password-2">Confirm password</label>
-                            <input type="password" id="password-2" name="password-2">
+                            <div class="entry">
+                                <label for="password-2">CONFIRM PASSWORD</label>
+                                <input type="password" id="password-2" name="password-2" required placeholder="">
+                            </div>
                         </div>
                     </div>
+
+                    <div class="form-footer">
+                        <button>Enlist</button>
+                        <p>
+                            Already enlisted? <a href="">Patrol schedule</a>
+                        </p>
+                    </div>
+
                 </form>
 
             </div>

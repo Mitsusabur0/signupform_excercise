@@ -3,14 +3,14 @@
 }
 
 html, body {
-    /* background-color: gray; */
-    font-family: 'Instrument Serif', serif;;
     margin: 0px;
     padding: 0px;
 }
 
 * {
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+
 }
 
 body {
@@ -23,13 +23,15 @@ body {
 }
 
 .hero-left {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 100vh;
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .content {
-    border: 1px solid green;
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -37,32 +39,102 @@ body {
 }
 
 .header {
-    background-color: whitesmoke;
-    /* opacity: 50%; */
+    background-color: rgb(248, 248, 248);
     height: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 40px;
+}
+
+.header p {
+    margin: 10px 0px;
 }
 
 .form-container {
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     height: 67%;
-    padding: 20px 60px;
 }
 
 form {
     font-size: 1.5rem;
+    /* border: 1px solid black; */
 }
+
+.entry-container {
+    padding: 10px 40px;
+    background-color: white;
+    box-shadow: 0px 3px 5px 0px lightgray;
+}
+
+.entry-container h1 {
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
 label {
     display: block;
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 2px;
+    opacity: 50%;
 }
 
 .entry input {
-    border: 1px solid lightgray;
-    border-radius: 3px;
-    font-size: 1.3rem;
+    /* border: 1px solid lightgray; */
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+
 }
 
 .form-row {
     display: flex;
     gap: 40px;
+    margin-bottom: 20px;
 }
 
+.form-footer {
+    /* border: 1px solid blue; */
+    margin-top: 20px;
+    height: 100%;
+    padding: 20px 50px;
+    font-size: 1.2rem;
+
+}
+
+.form-footer button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgb(151, 212, 236);
+    font-size: inherit;
+}
+
+input:valid {
+    border: 1px solid green;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:placeholder-shown {
+    border: 1px solid lightgray;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.61);
+    color: white;
+    font-size: 1.8rem;
+    
+}
