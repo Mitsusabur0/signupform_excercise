@@ -1,3 +1,7 @@
+:root {
+    font-size: 16px;
+}
+
 html, body {
     /* background-color: gray; */
     font-family: 'Instrument Serif', serif;;
@@ -5,8 +9,60 @@ html, body {
     padding: 0px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-image: url(./imgs/stormwind.jpg);
     background-size: cover; 
+}
+
+.body-container {
+    display: flex;
+}
+
+.hero-left {
+    border: 1px solid red;
+    height: 100vh;
+    width: 40%;
+}
+
+.content {
+    border: 1px solid green;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    /* padding: 40px; */
+}
+
+.header {
+    background-color: whitesmoke;
+    /* opacity: 50%; */
+    height: 33%;
+}
+
+.form-container {
+    background-color: white;
+    height: 67%;
+    padding: 20px 60px;
+}
+
+form {
+    font-size: 1.5rem;
+}
+label {
+    display: block;
+}
+
+.entry input {
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    font-size: 1.3rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 40px;
 }
 
