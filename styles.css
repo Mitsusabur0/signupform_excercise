@@ -28,7 +28,7 @@ body {
     width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .content {
@@ -136,5 +136,6 @@ input:placeholder-shown {
     background-color: rgba(0, 0, 0, 0.61);
     color: white;
     font-size: 1.8rem;
+    margin-top: 50%;
     
 }
